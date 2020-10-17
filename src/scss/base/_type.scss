@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive; 
+    text-shadow:  1px 1px #FF209D,
+        2px 1px #FF209D,
+        3px 2px #FF209D,
+        4px 2px #FF209D,
+        5px 3px #FF209D,
+        6px 3px #FF209D;
+    color: #ffffff;
+}
