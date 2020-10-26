@@ -1,0 +1,10 @@
+nav:
+  - item:
+      name: Home
+      url: /
+  - item:
+      name: About
+      url: /about
+  - item:
+      name: Contact
+      url: /contact

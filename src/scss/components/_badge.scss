@@ -1,6 +1,5 @@
 .c-badge {
     display: flex;
-    
     flex-direction: column;
     @media screen and (min-width: 728px) {
         flex-direction: row;
@@ -31,11 +30,13 @@
     &__text {
         flex: 0 0 70%;
         //font-weight: 700;
-        font-size: 0.7rem;
+        font-size: 1rem;
         color: #fff;
         font-family: 'Press Start 2P', cursive; 
         p {
             margin-bottom: 15px;
+        font-size: 0.8rem;
+
         }
     }
 }

@@ -1,0 +1,105 @@
+.c-nav {
+    &__menu {
+        position: fixed;
+        background: rgba(0,0,0,0.85);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        pointer-events: none;
+        opacity: 0;
+        transition: 0.25s;
+        &.active {
+            pointer-events: all;
+            opacity: 1; 
+        }
+        &__list {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &__item {
+            list-style: none;
+            color: white;
+            font-family: 'Press Start 2P', cursive; 
+            font-size: 1.5rem; 
+            text-decoration: none;
+            display: block;
+            position: relative;
+            margin:30px 0;
+            &:focus,
+            &:active,
+            &:hover {
+                &:before {
+                    content: ' ';
+                    position: absolute;
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    box-shadow: 
+                        -10px 5px $pink,
+                        -10px 10px $pink,
+                        -10px 15px $pink,
+                        -10px 20px $pink,
+                        -10px 25px $pink,
+                        -5px 10px $pink,
+                        -5px 15px $pink,
+                        -5px 20px $pink,
+                        0px 15px $pink;
+                    left: -30px;
+                    top: 0;
+                }
+            }
+        }
+        
+    }
+    &__toggle {
+        position: fixed;
+        right: 50px;
+        border:none;
+        top: 50px;
+
+        width: 35px;
+        height: 35px;
+        z-index: 1000;
+        background-color: $pink;
+        box-shadow:
+            0px 0px $pink,
+            -10px -10px $pink,
+            10px -10px $pink,
+            10px 10px $pink,
+            -10px 10px $pink,
+            0 18px $pink,
+            -18px 0 $pink,
+            18px 0 $pink,
+            0 -18px $pink,
+            inset 0px 7px white,
+            inset 0px 14px $pink,
+            inset 0px 21px white,
+            inset 0px 28px $pink,
+            inset 0px 35px white;
+        &:hover {
+            box-shadow:
+                0px 0px darken($pink,20%),
+                -10px -10px darken($pink,20%),
+                10px -10px darken($pink,20%),
+                10px 10px darken($pink,20%),
+                -10px 10px darken($pink,20%),
+                0 18px darken($pink,20%),
+                -18px 0 darken($pink,20%),
+                18px 0 darken($pink,20%),
+                0 -18px darken($pink,20%),
+                inset 0px 7px white,
+                inset 0px 14px darken($pink,20%),
+                inset 0px 21px white,
+                inset 0px 28px darken($pink,20%),
+                inset 0px 35px white;
+            cursor: pointer;
+        }
+        &.active {
+
+        }
+    }
+}

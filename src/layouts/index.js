@@ -8,9 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
-import Header from "./header"
+import Header from "../components/header"
 import "../scss/style.scss"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,12 +28,14 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
-        <main>{children}</main>
+        <main>
+            {children}
+        </main>
         <footer>
-
+          <div>
+            <p>&copy; Jonathan Baines 2020</p>
+          </div>
         </footer>
-      </div>
     </>
   )
 }
@@ -39,5 +43,4 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-console.log('howdy');
 export default Layout
