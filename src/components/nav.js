@@ -16,7 +16,7 @@ const Nav = (props) => {
         <nav className={isVisible ? "c-nav__menu active" : "c-nav__menu"}>
             <ul className="c-nav__menu__list">
                 {YAMLData.nav.map((data, index) => {
-                    return <li><AniLink cover bg="#FF209D" to={data.item.url} className="c-nav__menu__item">{data.item.name}</AniLink ></li>
+                    return <li key={index}><AniLink cover bg="#FF209D" to={data.item.url} className="c-nav__menu__item">{data.item.name}</AniLink ></li>
                 })}
             </ul>
         </nav>

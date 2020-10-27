@@ -11,7 +11,7 @@ const IndexPage = ({data}) => (
   <Layout>
 
       <SEO title="Home" />
-      <div class="c-container">
+      <div className="c-container">
         <div className="c-badge">
           <Img fluid={data.file.childImageSharp.fluid}  className="c-badge__img"/>
           <div className="c-badge__text">
