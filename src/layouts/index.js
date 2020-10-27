@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, {useEffect, useState} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -23,7 +23,26 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const [scrolled, setScrolled] = useState(true);
+  const onScroll = () => {
 
+    console.log(window.pageYOffset);
+    document.body.style = `background-position: 0% -${window.pageYOffset/1.5}px`;
+
+    const isScrolled = window.scrollY > 10;
+    if (isScrolled !== scrolled) {
+      setScrolled(!scrolled);
+    }
+  };
+  
+  useEffect(() => {
+    console.log('useEffect');
+    window.addEventListener("scroll", onScroll, {passive: true});
+    return () => {
+      console.log("Cleaned up");
+      window.removeEventListener("scroll", onScroll);
+    };
+  }); 
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
