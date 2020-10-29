@@ -7,13 +7,17 @@ body {
 
 h1 {
     font-family: 'Press Start 2P', cursive; 
-    text-shadow:  1px 1px #FF209D,
-        2px 1px #FF209D,
-        3px 2px #FF209D,
-        4px 2px #FF209D,
-        5px 3px #FF209D,
-        6px 3px #FF209D;
+    text-shadow:  1px 1px $pink,
+        2px 1px $pink,
+        3px 2px $pink,
+        4px 2px $pink,
+        5px 3px $pink,
+        6px 3px $pink;
     color: #ffffff;
+}
+
+a:not([class]) {
+    color: $pink;
 }
 
 h2 {
@@ -28,4 +32,8 @@ h3 {
     color: #ffffff;
     font-size: 1.5rem;
     line-height: 2rem;
+}
+
+p {
+    line-height: 1.75rem;
 }

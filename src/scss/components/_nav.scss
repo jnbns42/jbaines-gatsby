@@ -60,46 +60,14 @@
         right: 50px;
         border:none;
         top: 50px;
-
-        width: 35px;
-        height: 35px;
+        background-color: transparent;
+        background-image: url('../images/icon-menu.png');
         z-index: 1000;
-        background-color: $pink;
-        box-shadow:
-            0px 0px $pink,
-            -10px -10px $pink,
-            10px -10px $pink,
-            10px 10px $pink,
-            -10px 10px $pink,
-            0 18px $pink,
-            -18px 0 $pink,
-            18px 0 $pink,
-            0 -18px $pink,
-            inset 0px 7px white,
-            inset 0px 14px $pink,
-            inset 0px 21px white,
-            inset 0px 28px $pink,
-            inset 0px 35px white;
-        &:hover {
-            box-shadow:
-                0px 0px darken($pink,20%),
-                -10px -10px darken($pink,20%),
-                10px -10px darken($pink,20%),
-                10px 10px darken($pink,20%),
-                -10px 10px darken($pink,20%),
-                0 18px darken($pink,20%),
-                -18px 0 darken($pink,20%),
-                18px 0 darken($pink,20%),
-                0 -18px darken($pink,20%),
-                inset 0px 7px white,
-                inset 0px 14px darken($pink,20%),
-                inset 0px 21px white,
-                inset 0px 28px darken($pink,20%),
-                inset 0px 35px white;
-            cursor: pointer;
-        }
+        width: 48px;
+        height: 48px;
+        background-size: contain;
         &.active {
-
+            background-image: url('../images/icon-close.png');
         }
     }
 }

@@ -1,0 +1,34 @@
+intro: I've been working as a developer for nearly 10 years. I've worked on a variety of projects over the years, everything from large eCommerce projects to Google Chrome extensions.
+experience:
+  - item:
+      company: McCann Manchester
+      text: > 
+            I currently work as the Senior Front End Dev on my team. I'm not sure how much I can divulge here in terms of the 
+            clients I have completed work for sadly! Since I joined, I have been working towards modernising the front end tech we use on Umbraco projects,
+            moving away from jQuery and towards ES6 and other JS frameworks.    
+
+              I'm a big advocate of the [Frameworkless Movement](https://www.frameworklessmovement.org/). Some of the project I have worked on have been
+            purely ES6 Javascript, though I have worked on projects that require React (well...[Preact](https://preactjs.com/) technically) to produce
+            reusable components.    
+
+              I also had the pleasure of contributing to [this little project](https://winners.webbyawards.com/2020/social/features/experimental-innovation/122408/baby-blocker), which won a Webby!
+      url: https://www.mccannmanchester.com/
+  - item:
+      company: The Fragrance Shop
+      text: > 
+            I was brought on to help the company bring in some of the development work in house. I worked largely with
+            AngularJS, Vue.js, SASS (using the BEM methodology) and Gulp, to produce flexible, reusable front end code for C# based websites.
+      url: https://www.thefragranceshop.co.uk/
+  - item:
+      company: ADZ Media
+      text: >
+            More of a full stack role than front end. During my time at ADZ I worked on Wordpress and Laravel projects, ranging from eCommerce builds
+            to more content driven websites. 
+      url: https://www.adz.media/
+  - item:
+      company: Venditan
+      text: >
+            Where I started! I joined as a graduate in 2011, initially building HTML emails (and occasionally designing them) as part of Venditans email marketting offering.
+            I eventually worked my way up to a mid level role, and was moved to the Front End Team. Despite it's name, the team actually worked
+            very heavily with PHP to hook sites into their eCommerce platform. 
+      url: https://www.venditan.com/

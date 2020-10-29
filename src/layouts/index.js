@@ -8,12 +8,12 @@
 import React, {useEffect, useState} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "../components/header"
+import Footer from "../components/footer"
 import "../scss/style.scss"
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -21,39 +21,37 @@ const Layout = ({ children }) => {
           title
         }
       }
+      allSitePage {
+        pageInfo {
+          currentPage
+        }
+      }
     }
   `)
+
   const [scrolled, setScrolled] = useState(true);
   const onScroll = () => {
-
-    console.log(window.pageYOffset);
-    document.body.style = `background-position: 0% -${window.pageYOffset/1.5}px`;
-
-    const isScrolled = window.scrollY > 10;
+    document.body.style = `background-position: 0% -${window.pageYOffset/3.5}px`;
+    const isScrolled = window.scrollY > 0;
     if (isScrolled !== scrolled) {
       setScrolled(!scrolled);
     }
   };
   
   useEffect(() => {
-    console.log('useEffect');
     window.addEventListener("scroll", onScroll, {passive: true});
     return () => {
-      console.log("Cleaned up");
       window.removeEventListener("scroll", onScroll);
     };
-  }); 
+  });
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header path={location.pathname} siteTitle={data.site.siteMetadata?.title || `Title`} />
         <main>
             {children}
         </main>
-        <footer>
-          <div>
-            <p>&copy; Jonathan Baines 2020</p>
-          </div>
-        </footer>
+        <Footer/>
     </>
   )
 }
@@ -62,3 +60,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 export default Layout
+ 
