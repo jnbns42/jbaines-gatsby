@@ -13,6 +13,7 @@
     "gatsby-plugin-offline": "^3.2.30",
     "gatsby-plugin-page-transitions": "^1.0.8",
     "gatsby-plugin-react-helmet": "^3.3.12",
+    "gatsby-plugin-sass": "^2.3.22",
     "gatsby-plugin-sharp": "^2.6.38",
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-source-filesystem": "^2.3.37",
