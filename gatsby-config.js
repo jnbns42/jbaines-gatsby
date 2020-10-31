@@ -41,9 +41,12 @@ module.exports = {
       options: {
         path: `${__dirname}/src/content/`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `UA-72903774-1`,
+      },
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

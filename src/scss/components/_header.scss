@@ -1,5 +1,7 @@
 .c-header {
-    padding: 50px;
+    @media screen and (min-width: 960px) {
+        padding: 50px;
+    }
     &__title {
         text-decoration: none;
     }

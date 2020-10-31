@@ -1,8 +1,13 @@
 .c-badge {
     display: flex;
     flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
     @media screen and (min-width: 728px) {
         flex-direction: row;
+        padding: 0;
+        text-align: left;
+
     }
     max-width:960px;
     width: 100%;
@@ -17,10 +22,12 @@
         flex: 1 0 40%;
         height: 100px;
         width: 200px;
+        margin-bottom: 15px;
         @media screen and (min-width: 728px) {
             flex: 0 0 20%;
             width: auto;
             height: auto;
+            margin-bottom: 0;
         }
         padding: 10px;
         //height: 150px;

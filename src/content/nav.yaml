@@ -5,6 +5,3 @@ nav:
   - item:
       name: About
       url: /about
-  - item:
-      name: Contact
-      url: /contact

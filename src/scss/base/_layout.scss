@@ -14,12 +14,15 @@ body {
     margin: 0 auto;
     padding: 15px;
     min-height: 100%;
-
+    display: flex;
     @media screen and (min-width: 960px) {
         padding: 0;
     }
     &--home {
         height: calc(100vh - 64px);
+    }
+    &--column {
+        flex-direction: column;
     }
 }
 

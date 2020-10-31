@@ -10,7 +10,7 @@ const SecondPage = ({...props}) => {
   
   return (<Layout location={props.location}>
       <SEO title="About" />
-      <div className="c-container">
+      <div className="c-container c-container--column">
         <h1>About</h1>
         <h2>{YAMLData.intro}</h2>
         <div className="c-content">
