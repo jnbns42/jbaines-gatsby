@@ -13,7 +13,14 @@ const IndexPage = ({data, ...props}) => {
       <SEO title="Home" />
       <div className="c-container c-container--home">
         <div className="c-badge">
-          <Img fluid={data.file.childImageSharp.fluid}  className="c-badge__img"/>
+          <div className="c-badge__monitor">
+            <Img fluid={data.file.childImageSharp.fluid}  className="c-badge__monitor__img"/>
+            <div className="c-badge__monitor__text">
+              <span>const home = () =&gt;  &#123;</span>
+              <span>&nbsp;&nbsp;&nbsp;console.log("Hello!");</span>
+              <span>&#125;</span>
+            </div>
+          </div>
           <div className="c-badge__text">
             <h1>{YAMLData.title}</h1>
             <p>{YAMLData.intro}</p>
@@ -27,9 +34,9 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "jb-1.jpg" }) {
+    file(relativePath: { eq: "monitor.png" }) {
       childImageSharp {
-        fluid(maxWidth: 480, maxHeight: 480) {
+        fluid(maxWidth: 480) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
