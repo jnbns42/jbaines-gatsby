@@ -21,6 +21,9 @@ const Layout = ({ children, location}) => {
           title
         }
       }
+      file(relativePath: { eq: "kenobi.png" }) {
+        publicURL
+      }
       allSitePage {
         pageInfo {
           currentPage
@@ -39,10 +42,18 @@ const Layout = ({ children, location}) => {
   };
   
   useEffect(() => {
+    console.log('%c ', 'font-size:400px; background:url("'+ window.location.protocol+ '//' + window.location.hostname.replace(/\/$/, "") + data.file.publicURL +'"); background-repeat: no-repeat; background-size: 58px 128px; font-size: 128px');
+    console.log('%c%s', 'color: #fcba03; font-size: 28px;','Hello there!');
+    console.log('%c%s', 'color: #fcba03; font-size: 14px;','If you are curious, this site is built with Gatsby.');
+    console.log('%c%s', 'color: #fcba03; font-size: 14px;','This site only exists to justify my domain name purchase in all honesty ¯¯\\_(ツ)_/¯¯');
+    console.log('%c%s', 'color: #fcba03; font-size: 14px;','And to serve as a bit of a playground...');
+    console.log('%c%s', 'color: #fcba03; font-size: 14px;','Hit me up on LinkedIn if you want to reach out!');
+
     window.addEventListener("scroll", onScroll, {passive: true});
     return () => {
       window.removeEventListener("scroll", onScroll);
     };
+
   });
 
   return (
@@ -60,4 +71,3 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 export default Layout
- 
