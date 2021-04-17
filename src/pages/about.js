@@ -17,6 +17,7 @@ const SecondPage = ({data, ...props}) => {
         <p className="c-about-intro">{YAMLData.intro}</p>
         
         <h2>Tech</h2>
+        <p>Including but not necessarily limited to...</p>
         <div className="c-content">
           <ul className="c-technologies">
           {YAMLData.tech.map((data, index) => {
@@ -26,6 +27,7 @@ const SecondPage = ({data, ...props}) => {
         </div>
 
         <h2>Work History</h2>
+        <p>My career in a nutshell...</p>
         <div className="c-content">
           <ul className="c-experience">
           {YAMLData.experience.map((data, index) => {

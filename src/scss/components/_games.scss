@@ -7,5 +7,17 @@
         background-color: #ffffff;
         padding: 10px;
         font-size: 0.8rem;
+        flex: 1 0 40%;
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1024px) {
+            flex: 0 0 20%;
+            text-align: left;
+            img {
+                margin: 0;
+            }
+        }
     }
 }

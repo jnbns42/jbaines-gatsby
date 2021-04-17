@@ -5,16 +5,16 @@
     left: 0;
     bottom: 0;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     z-index: 100;
     pointer-events: none;
     mix-blend-mode: color;
-    overflow: visible;
+    overflow: hidden;
     &__blob {
         position: absolute;
         top: -50%;
         right: -50%;
-        animation: blobify 80s infinite;
+        animation: blobify 60s infinite;
         width: 160vw;
         height: 160vh;
     }

@@ -37,7 +37,7 @@ experience:
   - item:
       company: ADZ Media
       text: >
-            More of a full stack role than front end. During my time at ADZ I worked on Wordpress and Laravel projects, ranging from eCommerce builds
+            More of a full stack role than front end. During my time at ADZ I worked on Wordpress and Laravel projects, ranging from e-commerce builds
             to more content driven websites. 
       url: https://www.adz.media/
   - item:
@@ -45,5 +45,5 @@ experience:
       text: >
             Where I started! I joined as a graduate in 2011, initially building HTML emails (and occasionally designing them) as part of Venditans email marketting offering.
             I eventually worked my way up to a mid level role, and was moved to the Front End Team. Despite it's name, the team actually worked
-            very heavily with PHP to hook sites into their eCommerce platform. 
+            very heavily with PHP to hook sites into their e-commerce platform. 
       url: https://www.venditan.com/
