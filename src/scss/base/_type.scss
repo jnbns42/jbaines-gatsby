@@ -3,6 +3,8 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    color: #f4f4f4;
+
 }
 
 h1 {
@@ -24,6 +26,7 @@ h2 {
     color: #f4f4f4;
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-top: 40px;
 }
 
 h3 {
@@ -36,4 +39,11 @@ h3 {
 
 p {
     line-height: 1.75rem;
+}
+
+.c-about-intro {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+
 }

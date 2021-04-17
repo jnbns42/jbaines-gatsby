@@ -9,12 +9,12 @@
     z-index: 100;
     pointer-events: none;
     mix-blend-mode: color;
-    overflow: hidden;
+    overflow: visible;
     &__blob {
         position: absolute;
         top: -50%;
         right: -50%;
-        animation: blobify 60s infinite;
+        animation: blobify 80s infinite;
         width: 160vw;
         height: 160vh;
     }
@@ -26,12 +26,12 @@
     }
 
     50% {
-        transform: scale(1.2) skew(5deg, 10deg) rotate(85deg);
+        transform: scale(1.2) skew(5deg, 10deg) rotate(75deg);
     }
 
     75% {
         transform: scale(0.9) skew(12deg, 15deg) rotate(55deg);
-    }
+    } 
 
     100% {
         transform: scale(1) skew(0deg, 0deg) rotate(0deg);

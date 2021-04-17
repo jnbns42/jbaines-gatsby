@@ -1,19 +1,19 @@
 .c-btn {
     padding: 10px;
-    background: white;
+    background: $yellow;
     display: inline-block;
     text-decoration: none;
-    color: #1c1c1c;
+    color: $darkgrey;
     margin: 10px 10px 10px 0;
-
+    box-shadow: -3px -3px 0px $darkgrey;
     transition: 0.2s;
     font-family: 'Press Start 2P', cursive; 
     font-size: 0.75rem;
+    &:focus,
+    &:active,
     &:hover {
         transform: translate(-3px, -3px);
-
-       // background: #dedede;
-        background: $yellow;
-        color: white;
+        box-shadow: -0px -0px 0px $darkgrey;
+        background: adjust-hue($yellow, -10deg);
     }
 }

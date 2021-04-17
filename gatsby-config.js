@@ -47,6 +47,13 @@ module.exports = {
       options: {
         trackingId: `UA-72903774-1`,
       },
+    },
+    {
+      resolve: `gatsby-source-steam`,
+        options: {
+          api_key: "5CB7427322F26CB30EF64537F59B734B", //key
+          user_id: "76561198040590914" // steamid
+        }
     }
-  ],
+  ]
 }

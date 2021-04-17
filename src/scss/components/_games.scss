@@ -1,0 +1,11 @@
+.c-games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    &__item {
+        display: inline-block;
+        background-color: #ffffff;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
