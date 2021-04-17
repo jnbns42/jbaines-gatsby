@@ -3,16 +3,15 @@ import ReactMarkdown from 'react-markdown'
 import Layout from "../layouts/index"
 import SEO from "../components/seo"
 import YAMLData from "../content/about.yaml"
+ 
 
-
-const SecondPage = ({...props}) => {
-  console.log(props);
-  
+const SecondPage = ({...props}) => {  
   return (<Layout location={props.location}>
       <SEO title="About" />
       <div className="c-container c-container--column">
-        <h1>About</h1>
-        <h2>{YAMLData.intro}</h2>
+        <p>{YAMLData.intro}</p>
+        <h2>Tech</h2>
+        <h2>Work History</h2>
         <div className="c-content">
           <ul className="c-experience">
           {YAMLData.experience.map((data, index) => {
@@ -29,3 +28,4 @@ const SecondPage = ({...props}) => {
 }
 
 export default SecondPage
+ 

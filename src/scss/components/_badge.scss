@@ -18,8 +18,8 @@
     left: 50%;
     transform: translate(-50%, -40%);
     align-items: center;
-    &__monitor {
-        flex: 1 0 40%;
+    &__img-container {
+        flex: 0 0 30%;
         width: 220px;
         margin-bottom: 15px;
         padding: 10px;
@@ -31,55 +31,13 @@
             height: auto;
             margin-bottom: 0;
         }
-        &__img {
-            > img {
+
+            img {
                 image-rendering: crisp-edges;
+                clip-path: url(#mask);
             }
-        }
-        &__text {
-            position: absolute;
-            top: 30px;
-            left: 30px;
-            font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
-            font-size: 0.6rem;
-            color: greenyellow;
-            mix-blend-mode: color-dodge;
-            span {
-                display: block;
-                border-right: .15em solid greenyellow;
-                white-space: nowrap;
-                overflow: hidden;
-                &:nth-child(1) {
-                    width: 12.5em;
-                    -webkit-animation: type 2s steps(40, end);
-                    animation: type 2s steps(40, end);
-                    -webkit-animation-delay: 0s;
-                    animation-delay: 0s;
-                    -webkit-animation-fill-mode: forwards;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-child(2) {
-                    width: 15.5em;
-                    opacity: 0;
-                    -webkit-animation: type2 2s steps(40, end);
-                    animation: type2 2s steps(40, end);
-                    -webkit-animation-delay: 2s;
-                    animation-delay: 2s;
-                    -webkit-animation-fill-mode: forwards;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-child(3) {
-                    width: 1em;
-                    opacity: 0;
-                    -webkit-animation: type3 0.2s steps(20, end), blink .5s step-end infinite alternate;
-                    animation: type3 0.2s steps(1, end), blink .5s step-end infinite alternate;
-                    -webkit-animation-delay: 4s;
-                    animation-delay: 4s;
-                    -webkit-animation-fill-mode: forwards;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
+        
+      
     }
     &__text {
         flex: 0 0 70%;
@@ -89,99 +47,8 @@
         font-family: 'Press Start 2P', cursive; 
         p {
             margin-bottom: 15px;
-        font-size: 0.8rem;
+            font-size: 0.8rem;
 
         }
     }
 }
-
-@keyframes type {
-    0% {
-      width: 0;
-    }
-    99.9% {
-      border-right: .15em solid greenyellow;
-    }
-    100% {
-      border: none;
-    }
-  }
-  
-@-webkit-keyframes type {
-    0% {
-      width: 0;
-    }
-    99.9% {
-      border-right: .15em solid greenyellow;
-    }
-    100% {
-      border: none;
-    }
-  }
-  
-  @keyframes type2 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    99.9% {
-      border-right: .15em solid greenyellow;
-    }
-    100% {
-      opacity: 1;
-      border: none;
-    }
-  }
-  
-  @-webkit-keyframes type2 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    99.9% {
-      border-right: .15em solid orange;
-    }
-    100% {
-      opacity: 1;
-      border: none;
-    }
-  }
-  
-  @keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @-webkit-keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  @-webkit-keyframes blink {
-    50% {
-      border-color: tranparent;
-    }
-  }

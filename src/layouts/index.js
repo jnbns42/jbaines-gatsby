@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Blob from "../components/blob"
 import "../scss/style.scss"
 
 
@@ -32,14 +33,7 @@ const Layout = ({ children, location}) => {
     }
   `)
 
-  const [scrolled, setScrolled] = useState(true);
-  const onScroll = () => {
-    document.body.style = `background-position: 0% -${window.pageYOffset/3.5}px`;
-    const isScrolled = window.scrollY > 0;
-    if (isScrolled !== scrolled) {
-      setScrolled(!scrolled);
-    }
-  };
+
   
   useEffect(() => {
     console.log('%c ', 'font-size:400px; background:url("'+ window.location.protocol+ '//' + window.location.hostname.replace(/\/$/, "") + data.file.publicURL +'"); background-repeat: no-repeat; background-size: 58px 128px; font-size: 128px');
@@ -49,20 +43,19 @@ const Layout = ({ children, location}) => {
     console.log('%c%s', 'color: #fcba03; font-size: 14px;','And to serve as a bit of a playground...');
     console.log('%c%s', 'color: #fcba03; font-size: 14px;','Hit me up on LinkedIn if you want to reach out!');
 
-    window.addEventListener("scroll", onScroll, {passive: true});
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
 
-  });
+
+  }, []);
 
   return (
     <>
+      <Blob/>
+
       <Header path={location.pathname} siteTitle={data.site.siteMetadata?.title || `Title`} />
         <main>
             {children}
         </main>
-        <Footer/>
+      <Footer/>
     </>
   )
 }

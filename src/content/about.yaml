@@ -1,4 +1,12 @@
 intro: I've been working as a developer for nearly 10 years. I've worked on a variety of projects over the years, everything from large eCommerce projects to Google Chrome extensions.
+tech:
+  - item: HTML
+  - item: ES6
+  - item: CSS
+  - item: SASS
+  - item: PostCSS
+  - item: Tailwind
+  - item: HTML
 experience:
   - item:
       company: McCann Manchester

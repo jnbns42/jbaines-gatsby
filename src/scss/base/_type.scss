@@ -6,32 +6,32 @@ body {
 }
 
 h1 {
-    font-family: 'Press Start 2P', cursive; 
+    font-family: 'Press Start 2P', sans-serif; 
     text-shadow:  1px 1px $pink,
         2px 1px $pink,
         3px 2px $pink,
         4px 2px $pink,
         5px 3px $pink,
         6px 3px $pink;
-    color: #ffffff;
+    color: #f4f4f4;
 }
-
 a:not([class]) {
     color: $pink;
 }
 
 h2 {
-    font-family: 'Press Start 2P', cursive; 
-    color: #ffffff;
-    font-size: 0.8rem;
+    font-family: 'Press Start 2P', sans-serif; 
+    color: #f4f4f4;
+    font-size: 1.5rem;
     line-height: 2rem;
 }
 
 h3 {
-    font-family: 'Press Start 2P', cursive; 
-    color: #ffffff;
-    font-size: 1.5rem;
+    font-family: 'Press Start 2P', sans-serif; 
+    color: $darkgrey;
     line-height: 2rem;
+    font-size: 0.8rem;
+
 }
 
 p {

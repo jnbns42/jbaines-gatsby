@@ -4,7 +4,7 @@ import Nav from "./nav";
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = ({ ...props }) => {
-  const h1 = props.path == '/' ? '' : <AniLink className="c-header__title" cover bg="#FF209D" to='/'><h1>Jonathan Baines</h1></AniLink >;
+  const h1 = props.path == '/' ? '' : <AniLink className="c-header__title" paintDrip hex="#FA4D56" to='/'><h1>Jonathan Baines</h1></AniLink >;
 
   return (
     <header className="c-header">
