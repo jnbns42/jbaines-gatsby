@@ -13,3 +13,8 @@
 @import 'components/footer';
 @import 'components/header';
 @import 'components/nav';
+
+// causing some weirdness with position fixed elems....workaround for now
+.tl-wrapper {
+    transform: unset !important;
+}
