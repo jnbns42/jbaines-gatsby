@@ -25,7 +25,7 @@ const WorkPage = ({data, ...props}) => {
                 <div>
                     <ReactMarkdown>{project.item.text}</ReactMarkdown>
                 </div>
-                <a className='c-btn' href={project.item.url} target="_blank">Visit site</a>
+                <a className='c-btn' href={project.item.url} target="_blank">View project</a>
                 </li>
               )
             })}
