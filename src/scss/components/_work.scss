@@ -1,0 +1,38 @@
+.c-work {
+    display: block;
+    &__item {
+        position: relative;
+        padding-bottom: 50px;
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 30px;
+        &__image {
+            width: 100%;
+            border: 1px solid #c2c2c2;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        &:first-child {
+            border: 2px solid #FA4D56;
+            h3 {
+                font-size: 1.25rem;
+            }
+            padding-top: 54px;
+            &:before {
+                background-color: #FA4D56;
+                width: 100%;
+                padding: 10px 20px;
+                color: #ffffff;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: 'Latest project';
+                font-family: 'Press Start 2P', sans-serif; 
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
