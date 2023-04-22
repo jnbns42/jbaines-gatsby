@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import YAMLData from "../content/nav.yaml"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 
 const Nav = (props) => {
 
@@ -21,9 +21,8 @@ const Nav = (props) => {
         </button>
         <nav className={isVisible ? "c-nav__menu active" : "c-nav__menu"}>
             <ul className="c-nav__menu__list">
-                {YAMLData.nav.map((data, index) => {
-                    return <li key={index}><AniLink paintDrip hex="#FA4D56" to={data.item.url} className="c-nav__menu__item">{data.item.name}</AniLink ></li>
-                })}
+                <li><a class="c-nav__menu__item" href="/about">About</a></li>
+                <li><a class="c-nav__menu__item" href="/work">Work</a></li>
             </ul>
         </nav>
     </div>

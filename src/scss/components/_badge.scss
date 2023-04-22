@@ -18,6 +18,7 @@
     left: 50%;
     transform: translate(-50%, -40%);
     align-items: center;
+      filter:              grayscale(100%) contrast(1) blur(var(--blur));
     &__img-container {
         flex: 0 0 30%;
         width: 220px;

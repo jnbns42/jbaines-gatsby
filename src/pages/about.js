@@ -40,40 +40,9 @@ const SecondPage = ({data, ...props}) => {
           </ul>
         </div>
 
-        <h2>Games</h2>
-        <p>All work and no play makes Jonathan a dull boy. Here's what I've been playing recently.</p>
-        <div className="c-content">
-          <ul className="c-games">
-          {data.allSteamGame.nodes.map((node, index) => {
-            const total = node.playtime_forever / 60;
-            const twoweeks = node.playtime_2weeks / 60;
-            return(<li className="c-games__item">
-              <img src={`https://media.steampowered.com/steamcommunity/public/images/apps/${node.steamId}/${node.img_logo_url}.jpg`} alt=""/>
-              <span>
-                <strong>Last two weeks:</strong> {twoweeks.toFixed(1)} hrs
-                <br/>
-                <strong>All time:</strong> {total.toFixed(1)}  hrs
-              </span>
-            </li>)
-          })}
-          </ul>
-        </div>
+        
       </div> 
   </Layout>)
 }
 
 export default SecondPage
-
-export const query = graphql`
-  query {
-    allSteamGame {
-      nodes {
-        name
-        playtime_forever
-        playtime_2weeks
-        steamId
-        img_logo_url
-        img_icon_url
-      }
-    }
-  }`

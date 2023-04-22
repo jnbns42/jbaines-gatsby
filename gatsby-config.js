@@ -14,32 +14,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-transition-link`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-transformer-sharp`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-transformer-yaml-plus`,
-      options: {
-        enableRemark: true,
-        markdownPreface: 'md//',
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/content/`,
+        // The option defaults to true
+        checkSupportedExtensions: false,
       },
     },
     {
@@ -47,13 +27,6 @@ module.exports = {
       options: {
         trackingId: `UA-72903774-1`,
       },
-    },
-    {
-      resolve: `gatsby-source-steam`,
-        options: {
-          api_key: "5CB7427322F26CB30EF64537F59B734B", //key
-          user_id: "76561198040590914" // steamid
-        }
     }
   ]
 }

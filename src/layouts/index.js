@@ -42,9 +42,6 @@ const Layout = ({ children, location}) => {
     console.log('%c%s', 'color: #fcba03; font-size: 14px;','This site only exists to justify my domain name purchase in all honesty ¯¯\\_(ツ)_/¯¯');
     console.log('%c%s', 'color: #fcba03; font-size: 14px;','And to serve as a bit of a playground...');
     console.log('%c%s', 'color: #fcba03; font-size: 14px;','Hit me up on LinkedIn if you want to reach out!');
-
-
-
   }, []);
 
   return (
