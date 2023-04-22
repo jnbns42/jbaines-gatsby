@@ -8,9 +8,6 @@ import YAMLData from "../content/about.yaml"
  
 
 const SecondPage = ({data, ...props}) => {  
-  
-  console.log(data);
-  
   return (<Layout location={props.location}>
       <SEO title="About" />
       <div className="c-container c-container--column">

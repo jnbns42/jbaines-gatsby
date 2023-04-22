@@ -1,0 +1,33 @@
+
+projects:
+  - item:
+      company: HSL Chairs
+      text: > 
+        The HSL Chairs website was recently rebuilt by my team at McCann, migrating from Wordpress to Umbraco. 
+        
+          I was involved with building the majority of the front end, making use of Vue 3 to build a chair configurator for product pages (pictured) and a UI to guide users to chair recomendations based on their needs.
+
+          Much of the styling was built with a utility first mindset, to reduce duplicate CSS as much as possible, keep stylesheets small in filesize, and to provide easy to understand styles to all other developers.
+      url: https://www.hslchairs.com/
+  - item:
+      company: Miller Homes Customer Journey
+      text: > 
+            Miller Homes wanted to take potential customers through their buying process, in a way that was fun and engaging.
+
+              This animated landing page is built using React and GreenSock, hooking into the user's scroll position to animate keys along paths. The page also makes use of the IntersectionObserver API to trigger embedded MP4s to play.
+      url: https://www.millerhomes.co.uk/customer-journey.aspx
+  - item:
+      company: Persimmon Homes
+      text: >
+            A big project for us during the pandemic. We were tasked with completing a project that had previously been in development at another agency.
+              There were extremely tight deadlines for this project, 
+      url: https://www.persimmonhomes.com/
+  - item:
+      company: Baby Blocker
+      text: >
+            One of the first projects I worked on at McCann. We built a browser extension that blocked baby photos in Facebook feeds. The project was built during the pregnancy of a member of the royal family, and Skyn Condoms wanted to use that to promote their brand in a unique way.
+
+              The extension unfortunately is no longer available, but you can view a small clip about the project at the link below!
+
+              [Oh, this also won a Webby!](https://winners.webbyawards.com/2020/social/features/experimental-innovation/122408/baby-blocker)
+      url: https://youtu.be/QvPZGJYqBc4
