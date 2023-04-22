@@ -22,7 +22,8 @@ projects:
       company: Persimmon Homes
       text: >
             A big project for us during the pandemic. We were tasked with completing a project that had previously been in development at another agency.
-              There were extremely tight deadlines for this project, 
+              There were extremely tight deadlines for this project, so as much of the existing front end code had to remain. 
+              The site is based on Bootstrap, and makes some use of Preact for the search functionality (previously React, but was switched to reduce the size of compiled bundles).
       url: https://www.persimmonhomes.com/
       imageName: persimmon.PNG
   - item:
