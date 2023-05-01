@@ -25,7 +25,8 @@ const IndexPage = ({data, ...props}) => {
       </div>
       <svg  width="0" height="0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <clipPath id="mask">
-        <path fill="#FF0066" d="M55,-43.9C70.5,-24.3,81.9,-1.5,79.2,21.1C76.4,43.7,59.5,66.1,37.9,75.2C16.3,84.3,-10.1,80,-30.8,68.3C-51.4,56.7,-66.4,37.6,-69.9,17.4C-73.4,-2.9,-65.5,-24.4,-51.9,-43.5C-38.3,-62.7,-19.2,-79.6,0.3,-79.8C19.7,-80,39.4,-63.6,55,-43.9Z" transform="translate(100 100)" />        </clipPath>
+        <path fill="#FF0066" d="M55,-43.9C70.5,-24.3,81.9,-1.5,79.2,21.1C76.4,43.7,59.5,66.1,37.9,75.2C16.3,84.3,-10.1,80,-30.8,68.3C-51.4,56.7,-66.4,37.6,-69.9,17.4C-73.4,-2.9,-65.5,-24.4,-51.9,-43.5C-38.3,-62.7,-19.2,-79.6,0.3,-79.8C19.7,-80,39.4,-63.6,55,-43.9Z" transform="scale(2) translate(100, 100)" />
+        </clipPath>
       </svg>
   </Layout>)
 }
@@ -34,9 +35,9 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "jb-1.jpg" }) {
+    file(relativePath: { eq: "bg-11.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 480) {
+        fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
