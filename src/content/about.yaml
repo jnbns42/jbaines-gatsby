@@ -18,13 +18,9 @@ experience:
   - item:
       company: McCann Manchester
       text: > 
-            I currently work as the Senior Front End Dev on my team. I'm not sure how much I can divulge here in terms of the 
-            clients I have completed work for sadly! Since I joined, I have been working towards modernising the front end tech we use on Umbraco projects,
-            moving away from jQuery and towards ES6 and other JS frameworks.    
+            I currently work as the Senior Front End Dev on my team. Since joining, I have been working towards modernising the front end stack of their projects. Initially, all projects were jQuery based. Overtime, I have been dropping the use of jQuery, RequireJS and Gulp in newer projects/rebuilds in favour of vanilla ES6 and Webpack (with a sprinkling of moder JS frameworks, where appropriate). I'm a big advocate of the [Frameworkless Movement](https://www.frameworklessmovement.org/), so for our more traditional, non-headless Umbraco projects, I feel big Javascript frameworks should be used sparingly.
 
-              I'm a big advocate of the [Frameworkless Movement](https://www.frameworklessmovement.org/). Some of the projects I have worked on have been
-            purely ES6 Javascript, though I have worked on projects that require React (well...[Preact](https://preactjs.com/) technically) to produce
-            reusable components.    
+              More recently, I have been introducing VueJS to the team, in an effort to introduce more modern frameworks into our Umbraco builds. This felt appropriate due to its smaller footprint, simplicity and out of the box reactivity.
 
               I also had the pleasure of contributing to [this little project](https://winners.webbyawards.com/2020/social/features/experimental-innovation/122408/baby-blocker), which won a Webby!
       url: https://www.mccannmanchester.com/
@@ -32,7 +28,8 @@ experience:
       company: The Fragrance Shop
       text: > 
             I was brought on to help the company bring in some of the development work in house. I worked largely with
-            AngularJS, Vue.js, SASS (using the BEM methodology) and Gulp, to produce flexible, reusable front end code for C# based websites.
+            AngularJS, Vue.js, SASS (using the BEM methodology) and Gulp, to produce flexible, reusable front end code for C# based websites. A lot of the work involved A/B testing new features with Google Optimize to maximise conversions, and also working with tight deadlines to get new projects and features out of the door, including redesigned checkouts and a full site rebuild on one occasion (sadly no longer live)! 
+
       url: https://www.thefragranceshop.co.uk/
   - item:
       company: ADZ Media
@@ -44,6 +41,5 @@ experience:
       company: Venditan
       text: >
             Where I started! I joined as a graduate in 2011, initially building HTML emails (and occasionally designing them) as part of Venditans email marketting offering.
-            I eventually worked my way up to a mid level role, and was moved to the Front End Team. Despite it's name, the team actually worked
-            very heavily with PHP to hook sites into their e-commerce platform. 
+            I eventually worked my way up to a mid level role, and was moved to the Front End Team. Despite it's name, the team actually worked very heavily with PHP to hook sites into their e-commerce platform. 
       url: https://www.venditan.com/
